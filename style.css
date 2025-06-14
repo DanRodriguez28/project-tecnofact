@@ -144,6 +144,11 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
+.nav__log {
+    position: relative;
+    top: -25px;
+}
+
 .nav__log a {
     background: #2985B2;
     font-size: 1.1rem;
@@ -279,6 +284,175 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+.testimonials {
+    height: 100vh;
+}
+
+.testimonials__background {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -50px;
+    position: relative;
+    padding: 50px 0px;
+}
+
+.testimonials__background::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(255, 255, 255, 0), rgb(255, 255, 255, 1));
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.testimonials__background div {
+    width: 150px;
+}
+
+.testimonials__background div:nth-child(1), div:nth-child(3), div:nth-child(5), div:nth-child(7), div:nth-child(9) {
+    margin-top: 50px;
+}
+
+.testimonials__background div img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.testimonials__content {
+    text-align: center;
+    margin-top: -260px;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials__content p:nth-child(1) {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.testimonials__content h2 {
+    margin: 15px 0px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #07111F;
+}
+
+.testimonials__content h2 span {
+    color: #2985B2;
+}
+
+.testimonials__content p:nth-child(3) {
+    font-size: 1.5rem;
+}
+
+.testimonials__content a {
+    background-color: #2985B2;
+    color: #fff;
+    padding: 10px 30px;
+    position: relative;
+    top: 30px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.testimonials__content a:hover {
+    background-color: #07111F;
+}
+
+/********** SIGN UP **********/
+
+.signUp {
+    height: 100vh;
+    background-image: url('./images/background__signup.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.signUp::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #07111F, rgb(7, 17, 31, 0) 800%);
+}
+
+/********** TESTIMONIOS **********/
+
+.testimonios .testimonios__home {
+    height: 100vh;
+    position: relative;
+}
+
+.testimonios .testimonials__background {
+    background-color: #07111F;
+    height: 100vh;
+    padding-top: 130px;
+}
+
+.testimonios .testimonials__background::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(7, 17, 31, 0), rgb(7, 17, 31));
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.testimonios .testimonials__content {
+    margin-top: -250px;
+}
+
+.testimonios .testimonials__content p:nth-child(1) {
+    background-color: #fff;
+    color: #000;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.testimonios .testimonials__content h2 {
+    margin: 25px 0px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.testimonios .testimonials__content h2 span {
+    color: #2985B2;
+}
+
+.testimonios .testimonials__content p:nth-child(3) {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.testimonios .testimonios__home i {
+    position: absolute;
+    bottom: -20px;
+    font-size: 2rem;
+    color: #fff;
+    left: calc(50% - 1rem);
+    opacity: 0.7;
+    animation: float 3s linear infinite;
+}
+
 /********** LEGAL **********/
 
 .legal__home {
@@ -305,7 +479,7 @@ body::-webkit-scrollbar-thumb {
 
 .legal__container {
     margin: 100px 10% 100px 10%;
-    padding: 0px 5% 50px 5%;
+    padding: 20px 5% 50px 5%;
     border-left: dashed 2px #2985B2;
 }
 
