@@ -21,47 +21,34 @@
             <img src="./images/logo.png" alt="">
             <img src="./images/tecnofact.png" alt="">
         </a>
-        <ul class="nav__options">
-            <li>
-                <button>
-                    <p>Servicios</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </button>
-                <div>
-                    <a href="./servicios/app-tecnofact">App TecnoFact</a>
-                    <a href="./servicios/api-rest-tecnofact">API REST TecnoFact</a>
-                    <a href="./servicios/timbraxpress">TimbraXpress</a>
-                    <a href="./servicios/planes">Planes</a>
-                </div>
-            </li>
-            <li>
-                <button>
-                    <p>Blog y Noticias</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </button>
-                <div>
-                    <a href="./blog/home">Blog</a>
-                    <a href="./noticias/home">Noticias</a>
-                </div>
-            </li>
-            <li>
-                <a href="./testimonios">Testimonios</a>
-            </li>
-            <li>
-                <button>
-                    <p>Sobre Nosotros</p>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </button>
-                <div>
-                    <a href="./nosotros">¿Quiénes Somos?</a>
-                    <a href="./faq">FAQ's</a>
-                    <a href="./contacto">Contáctanos</a>
-                </div>
-            </li>
-        </ul>
+        <div class="nav__log">
+            <a href="./login">Inicia Sesión</a>
+        </div>
     </nav>
     <div class="signUp">
-
+        <div class="signUp__container">
+            <img src="./images/logo.png" alt="">
+            <h2>Crea una nueva cuenta</h2>
+            <p>¿Ya eres cliente? <a href="./login">Inicia Sesión</a></p>
+            <form action="" class="form__signUp">
+                <input type="text" placeholder="Nombre / Razón Social">
+                <div class="formTwo">
+                    <input type="text" placeholder="RFC">
+                    <input type="number" placeholder="Teléfono">
+                </div>
+                <input type="email" placeholder="Correo Electrónico">
+                <div class="password-container">
+                    <input type="password" placeholder="Contraseña" id="password">
+                    <i id="togglePassword" class="fa-solid fa-eye"></i>
+                </div>
+                <div class="password-container">
+                    <input type="password" placeholder="Contraseña" id="password">
+                    <i id="togglePassword" class="fa-solid fa-eye"></i>
+                </div>
+                <input type="submit" placeholder="Registrarme">
+            </form>
+        </div>
+        <p class="signUp__copy">2025 © TecnoFact</p>
     </div>
     <div class="social">
         <a href="https://www.facebook.com/share/19cz3yHhsj/" target="_blank">

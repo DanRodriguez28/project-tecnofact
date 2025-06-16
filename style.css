@@ -164,6 +164,10 @@ body::-webkit-scrollbar-thumb {
     font-weight: 500;
 }
 
+.nav.sign .nav__log {
+    top: 0px;
+}
+
 /********** LANDING **********/
 
 .home {
@@ -373,20 +377,123 @@ body::-webkit-scrollbar-thumb {
 /********** SIGN UP **********/
 
 .signUp {
-    height: 100vh;
     background-image: url('./images/background__signup.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding: 80px 0px;
 }
 
 .signUp::after {
     content: "";
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     background: linear-gradient(45deg, #07111F, rgb(7, 17, 31, 0) 800%);
+}
+
+.signUp__container {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    margin: 0px 10%;
+}
+
+.signUp__container img {
+    margin: auto;
+    display: block;
+    width: 150px;
+}
+
+.signUp__container h2 {
+    color: #fff;
+    font-size: 2.8rem;
+}
+
+.signUp__container p:nth-child(3) {
+    color: #fff;
+    margin: 20px 0px;
+}
+
+.signUp__container p:nth-child(3) a {
+    color: #2985B2;
+    margin-left: 10px;
+}
+
+.signUp__container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signUp__container .formTwo input {
+    width: 49%;
+}
+
+.form__signUp input {
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 5px 0px;
+}
+
+.form__signUp input::placeholder {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.signUp__container input {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    margin: 0px !important;
+}
+
+#password {
+    padding-right: 40px;
+    font-size: 16px;
+}
+
+.signUp__container .fa-eye {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    color: #aaa;
+    opacity: 0.5;
+}
+
+.signUp__container input[type = submit] {
+    cursor: pointer;
+    background-color: #2985B2;
+    transition: 0.5s;
+}
+
+.signUp__container input[type = submit]:hover {
+    background-color: rgb(41, 133, 178, 0.5);
+}
+
+.signUp__copy {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    left: calc(50% - 100px);
+    bottom: 30px;
+    font-size: 1.1rem;
+    opacity: 0.5;
 }
 
 /********** TESTIMONIOS **********/
