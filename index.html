@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoFact - Tecnología en Facturación Tecnológica</title>
+    <!-- ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- SWIPER JS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" href="./images/logo.png">
+</head>
+
+<body>
+    <nav class="nav">
+        <a class="nav__image" href="https://www.tecnofact.mx/">
+            <img src="./images/logo.png" alt="">
+            <img src="./images/tecnofact.png" alt="">
+        </a>
+        <ul class="nav__options" id="navOptions">
+            <li>
+                <button>
+                    <p>Servicios</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div>
+                    <a href="./servicios/app-tecnofact">App TecnoFact</a>
+                    <a href="./servicios/api-rest-tecnofact">API REST TecnoFact</a>
+                    <a href="./servicios/timbraxpress">TimbraXpress</a>
+                    <a href="./servicios/planes">Planes</a>
+                </div>
+            </li>
+            <li>
+                <button>
+                    <p>Blog y Noticias</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div>
+                    <a href="./blog/home">Blog</a>
+                    <a href="./noticias/home">Noticias</a>
+                </div>
+            </li>
+            <li>
+                <a href="./testimonios">Testimonios</a>
+            </li>
+            <li>
+                <button>
+                    <p>Sobre Nosotros</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div>
+                    <a href="./nosotros">¿Quiénes Somos?</a>
+                    <a href="./faq">FAQ's</a>
+                    <a href="./contacto">Contáctanos</a>
+                </div>
+            </li>
+        </ul>
+        <div class="nav__log" id="navLog">
+            <a href="./signup">Regístrate</a>
+        </div>
+        <i class="fa-solid fa-bars" id="navBars"></i>
+    </nav>
+    <div class="home">
+        <div class="home__container">
+            <h1>Facturar nunca fue tan <span>rápido</span>, <span>seguro</span> y <span>personalizado</span></h1>
+            <p>Con TecnoFact, facturar deja de ser una carga y se convierte en una herramienta para crecer, optimizar y tener el control total.</p>
+            <a href="./signup">Registrarme <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="aboutUs__team white">
+        <div class="aboutUs__team-text">
+          <h2>¡Bienvenido a TecnoFact!</h2>
+          <p>En TecnoFact creemos que la facturación no tiene por qué ser un dolor de cabeza. Somos una empresa apasionada por la innovación digital, dedicada a crear soluciones de facturación electrónica simples, seguras y adaptadas a las necesidades de cada negocio.</p>
+          <p>Con años de experiencia y un enfoque centrado en el cliente, ayudamos a emprendedores, comercios y empresas a optimizar su gestión contable, cumplir con la normativa y ahorrar tiempo.</p>
+          <p>Porque cuando tu facturación fluye, todo en tu negocio mejora.</p>
+        </div>
+        <div class="aboutUs__team-video">
+          <video src="./videos/team.mp4" controls></video>
+        </div>
+    </div>
+    <div class="stats">
+        <div>
+            <span>5 +</span>
+            <p>Años de Experiencia</p>
+        </div>
+        <div>
+            <span>200 +</span>
+            <p>PYMES ya confían en nosotros</p>
+        </div>
+        <div>
+            <span>250 +</span>
+            <p>Clientes Satisfechos</p>
+        </div>
+        <div>
+            <span>2000 +</span>
+            <p>Facturas generadas mensualemnte</p>
+        </div>
+    </div>
+    <div class="factura">
+        <div>
+            <img src="./images/Diseno-Computadora.png" alt="">
+        </div>
+        <div>
+            <h2><span>TecnoFact</span> la solución ideal para tu negocio</h2>
+            <a href="./servicios/planes" class="factura__options">
+                <i class="fa-solid fa-microchip"></i>
+                <div>
+                    <span>Integración Multipac</span>
+                    <p>Conectada a los 10 principales PACs de México, TecnoFact te ofrece la flexibilidad de elegir el proveedor de timbrado que mejor se adapte a tus necesidades, garantizando disponibilidad, eficiencia y opciones diversificadas para tus operaciones fiscales.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="./servicios/planes" class="factura__options">
+                <i class="fa-solid fa-file-lines"></i>
+                <div>
+                    <span>Emisión de Facturas Instantánea</span>
+                    <p>Genera y envía tus facturas electrónicas en segundos, cumpliendo con todas las normativas fiscales.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="./servicios/planes" class="factura__options">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <div>
+                    <span>Validación Automática</span>
+                    <p>Con nuestra conexión directa al SAT, aseguras la validez de tus comprobantes y cumples con las normativas fiscales.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="./servicios/planes" class="factura__options">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <div>
+                    <span>Recepción y Almacenamiento Organizado</span>
+                    <p>Centraliza la gestión de todas tus facturas entrantes en un solo lugar.</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="planes">
+        <h2>Nuestros Planes</h2>
+        <div class="planes__container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <span>Básico</span>
+                        <p>$200</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Sin vigencia</p>
+                        <p><i class="fa-solid fa-circle-check"></i> 30 Timbres</p>
+                        <p><span>Perfecto para:</span> Pequeñas empresas que necesitan una solución accesible y básica para cumplir con las obligaciones fiscales.</p>
+                        <a href="">Adquirir Producto</a>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <span>Intermedio</span>
+                        <p>$300</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Sin vigencia</p>
+                        <p><i class="fa-solid fa-circle-check"></i> 60 Timbres</p>
+                        <p><span>Perfecto para:</span> Empresas medianas que requieren mayor capacidad de timbrado y soporte sin complicaciones.</p>
+                        <a href="">Adquirir Producto</a>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <span>Avanzado</span>
+                        <p>$450</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Sin vigencia</p>
+                        <p><i class="fa-solid fa-circle-check"></i> 120 Timbres</p>
+                        <p><span>Perfecto para:</span> Empresas en expansión que requieren mayor volumen de facturación y un control más preciso de sus transacciones.</p>
+                        <a href="">Adquirir Producto</a>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <span>Profesional</span>
+                        <p>$700</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Sin vigencia</p>
+                        <p><i class="fa-solid fa-circle-check"></i> 250 Timbres</p>
+                        <p><span>Perfecto para:</span> Profesionales y empresas que requieren mayor capacidad de facturación y un servicio eficiente para gestionar grandes volúmenes de datos fiscales.</p>
+                        <a href="">Adquirir Producto</a>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <span>Empresarial</span>
+                        <p>$1000</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Sin vigencia</p>
+                        <p><i class="fa-solid fa-circle-check"></i> 500 Timbres</p>
+                        <p><span>Perfecto para:</span> Empresas que manejan un volumen considerable de facturación y buscan un servicio ágil y eficiente para cumplir con sus necesidades fiscales</p>
+                        <a href="">Adquirir Producto</a>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <span>Corporativo</span>
+                        <p>$1900</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Sin vigencia</p>
+                        <p><i class="fa-solid fa-circle-check"></i> 1000 Timbres</p>
+                        <p><span>Perfecto para:</span> Grandes empresas con operaciones complejas que requieren un servicio de timbrado eficiente, rápido y confiable</p>
+                        <a href="">Adquirir Producto</a>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <span>Premium</span>
+                        <p>$3000</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Sin vigencia</p>
+                        <p><i class="fa-solid fa-circle-check"></i> 2000 Timbres</p>
+                        <p><span>Perfecto para:</span> Grandes corporaciones que necesitan capacidad de timbrado masivo, con un servicio de alta calidad y eficienccia</p>
+                        <a href="">Adquirir Producto</a>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <span>Mega</span>
+                        <p>$6300</p>
+                        <p><i class="fa-solid fa-circle-check"></i> Sin vigencia</p>
+                        <p><i class="fa-solid fa-circle-check"></i> 5000 Timbres</p>
+                        <p><span>Perfecto para:</span> Empresas de gran tamaño que manejan una gran cantidad de transacciones y requieren una solución flexible y sin restricciones.</p>
+                        <a href="">Adquirir Producto</a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modulos">
+        <h2>Todos los <span>Módulos</span> en una sola <span>Plataforma</span></h2>
+        <p>En TecnoFact, nos dedicamos a innovar en la facturación electrónica, simplificando procesos y asegurando el cumplimiento fiscal.</p>
+        <div class="modulos__container">
+            <div>
+                <img src="./images/ico-blanco-factura.png" alt="">
+                <span>Emisión CFDI</span>
+                <a href="">Conocer Planer</a>
+            </div>
+            <div>
+                <img src="./images/ico-descarga.png" alt="">
+                <span>Descarga CFDI</span>
+                <a href="">Conocer Planes</a>
+            </div>
+            <div>
+                <img src="./images/ico-blanco-validacion.png" alt="">
+                <span>Validación CFDI</span>
+                <a href="">Conocer Planes</a>
+            </div>
+            <div>
+                <img src="./images/ico-blanco-validacion.png" alt="">
+                <span>Recepción CFDI</span>
+                <a href="">Conocer Planes</a>
+            </div>
+        </div>
+        <p>Crea y timbra cualquier tipo de CFDI al instante. Desde facturas y nóminas hasta complementos como carta porte, TecnoFact garantiza precisión, cumplimiento fiscal y personalización total en cada comprobante. ¡Simplifica tu facturación y mantente siempre al día!</p>
+    </div>
+    <div class="testimonials">
+        <div class="testimonials__background">
+            <div>
+                <img src="./images/testimonio1.jpg" alt="">
+                <img src="./images/testimonio2.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/testimonio3.jpg" alt="">
+                <img src="./images/testimonio4.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/testimonio5.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/testimonio6.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/testimonio7.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/testimonio8.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/testimonio9.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/testimonio10.jpg" alt="">
+                <img src="./images/testimonio11.jpg" alt="">
+            </div>
+            <div>
+                <img src="./images/testimonio12.jpg" alt="">
+                <img src="./images/testimonio13.jpg" alt="">
+            </div>
+        </div>
+        <div class="testimonials__content">
+            <p>Testimonios</p>
+            <h2>Empresas que <span>confían</span> en nuestro <span>poder digital</span></h2>
+            <p>Ellos ya dieron el paso hacia la facturación inteligente...</p>
+            <a href="./testimonios">Historias de Éxitos</a>
+        </div>
+    </div>
+    <div class="products">
+        <h2>¡Lo que <span>TecnoFact</span> puede hacer por tí!</h2>
+        <div class="products__container">
+            <div>
+                <img src="./images/img-appfact-tecn.png" alt="">
+                <span>App <span>TecnoFact</span></span>
+                <p>La web app definitiva en facturación electrónica. Emite facturas, complementos, nóminas, cartas porte y más, con total personalización y un diseño intuitivo. Simplifica tus procesos fiscales con todos los módulos en un solo lugar, adaptados a las necesidades de tu negocio.</p>
+                <a href="">Solicitar Servicio</a>
+            </div>
+            <div>
+                <img src="./images/img-timbra.png" alt="">
+                <span>API REST <span>TecnoFact</span></span>
+                <p>Lleva tu facturación electrónica al siguiente nivel con nuestra API REST multipac. Diseñada para emitir, cancelar, validar y gestionar cualquier tipo de CFDI: facturas, retenciones, complementos, nominas y más, todo desde una sola plataforma. Con un panel de control intuitivo y escalabilidad garantizada, simplifica tus procesos mientras disfrutas de control total sobre tus operaciones fiscales.</p>
+                <a href="">Solicitar Servicio</a>
+            </div>
+            <div>
+                <img src="./images/img-xpress.png" alt="">
+                <span>Timbra<span>Xpress</span></span>
+                <p>El autofacturador perfecto para integrar con sistemas punto de venta y generar CFDI de manera rápida y eficiente. Automatiza la emisión de facturas electrónicas, optimiza tus procesos de venta y garantiza el cumplimiento fiscal. Fácil de implementar, personalizable y diseñado para adaptarse a las necesidades de tu negocio.</p>
+                <a href="">Solicitar Servicio</a>
+            </div>
+        </div>
+    </div>
+    <div class="flexibilidad">
+        <h2>Flexibilidad Total con <span>Tecnología</span> Multipac</h2>
+        <div class="flexibilidad__container">
+            <img class="flexibilidad__center" src="./images/Conexion.png" alt="">
+            <img class="rotateOne" src="./images/img-2.png" alt="">
+            <img class="rotateTwo" src="./images/img-3.png" alt="">
+            <img class="rotateThree" src="./images/img-4.png" alt="">
+            <img class="rotateFour" src="./images/img-5.png" alt="">
+            <img class="rotateFive" src="./images/img-6.png" alt="">
+            <img class="rotateSix" src="./images/img-7.png" alt="">
+            <img class="rotateSeven" src="./images/img-8.png" alt="">
+            <img class="rotateEight" src="./images/img-9.png" alt="">
+
+        </div>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com/share/19cz3yHhsj/" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="mailto:contacto@tecnofact.mx">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://maps.app.goo.gl/tTSdxdy8j3iTa6Hv5" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+    </div>
+    <div class="socialTwo">
+        <a href="https://api.whatsapp.com/send/?phone=5216692762770&text=Hola+%2ATecnoFact%2A.+Necesito+m%C3%A1s+informaci%C3%B3n!&type=phone_number&app_absent=0" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:669 454 0439">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+    <footer class="footer">
+        <a class="footer__logo" href="">
+            <img src="./images/logo.png" alt="">
+            <img src="./images/tecnofact.png" alt="">
+        </a>
+        <div class="footer__link">
+            <div>
+                <img src="./images/logo.png" alt="TecnoFact Logo">
+                <p>La solución integral para la facturación electrónica.</p>
+                <form action="">
+                    <input type="email" placeholder="Ingresa tu correo electrónico">
+                    <input type="submit" value="Suscribir">
+                </form>
+            </div>
+            <div>
+                <span>Servicios</span>
+                <a href="./servicios/app-tecnofact">App TecnoFact</a>
+                <a href="./servicios/api-rest-tecnofact">API REST TecnoFact</a>
+                <a href="./servicios/timbraxpress">TimbraXpress</a>
+                <a href="./servicios/planes">Planes</a>
+            </div>
+            <div>
+                <span>Sobre Nosotros</span>
+                <a href="./nosotros">¿Quiénes Somos?</a>
+                <a href="./contacto">Contáctanos</a>
+                <a href="./testimonios">Testimonios</a>
+                <a href="./faq">FAQ's</a>
+            </div>
+            <div>
+                <span>Legal</span>
+                <a href="./legal/terminos-y-condiciones">Terminos y Condiciones</a>
+                <a href="./legal/politicas-de-cookies">Políticas de Cookies</a>
+                <a href="./legal/politicas-de-privacidad">Políticas de Privacidad</a>
+            </div>
+        </div>
+        <p class="footer__copy">© 2025 Servicios de Facturación Electrónica y Software del Pacífico S. de R.L de C.V.</p>
+    </footer>
+
+    <!-- CUSTOM JS -->
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.slider-wrapper', {
+
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 30,
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+        breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        620: {
+            slidesPerView: 2
+        },
+        1024:{
+            slidesPerView: 3
+        },
+        1440:{
+            slidesPerView: 4
+        },
+        }
+
+    })
+    </script>
+    <script src="./main.js"></script>
+
+</body>
+</html>
